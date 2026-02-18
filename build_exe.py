@@ -36,7 +36,7 @@ a = Analysis(
     ['internet_trafik_izleyici.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('app_icon.ico', '.'), ('app_icon.png', '.')],  # Icon dosyalarını ekle
     hiddenimports=[
         'customtkinter',
         'PIL._tkinter_finder',

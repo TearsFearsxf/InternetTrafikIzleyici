@@ -40,6 +40,20 @@ class InternetTrafikIzleyici:
         self.root.title("Internet Trafik İzleyici")
         self.root.geometry("1200x800")
         
+        # Icon ayarla
+        try:
+            # EXE içindeyse _MEIPASS klasöründen yükle
+            if getattr(sys, 'frozen', False):
+                icon_path = os.path.join(sys._MEIPASS, 'app_icon.ico')
+            else:
+                icon_path = 'app_icon.ico'
+            
+            if os.path.exists(icon_path):
+                self.root.iconbitmap(icon_path)
+                print(f"Icon yüklendi: {icon_path}")
+        except Exception as e:
+            print(f"Icon yüklenemedi: {e}")
+        
         # Pencereyi yeniden boyutlandırılabilir yap
         self.root.resizable(True, True)
         
@@ -168,10 +182,14 @@ class InternetTrafikIzleyici:
         main_frame = ctk.CTkFrame(self.root)
         main_frame.pack(fill="both", expand=True, padx=10, pady=10)
         
-        # Sol panel - Kontroller (Scrollable)
-        left_panel = ctk.CTkScrollableFrame(main_frame, width=300)
-        left_panel.pack(side="left", fill="y", padx=(0, 10))
-        left_panel.pack_propagate(False)  # Genişliği sabitle
+        # Sol panel container - Sabit genişlik
+        left_container = ctk.CTkFrame(main_frame, width=320)
+        left_container.pack(side="left", fill="y", padx=(0, 10))
+        left_container.pack_propagate(False)
+        
+        # Sol panel - Scrollable içerik
+        left_panel = ctk.CTkScrollableFrame(left_container)
+        left_panel.pack(fill="both", expand=True)
         
         # Sağ panel - Göstergeler ve grafikler
         right_panel = ctk.CTkFrame(main_frame)
@@ -1484,10 +1502,25 @@ Sonuçlar veritabanına kaydedildi."""
     def create_system_tray(self):
         """Sistem tepsisi ikonu oluşturur"""
         try:
-            # İkon oluştur
-            image = Image.new('RGB', (64, 64), color='black')
-            draw = ImageDraw.Draw(image)
-            draw.rectangle([16, 16, 48, 48], fill='blue')
+            # İkon yolunu belirle
+            if getattr(sys, 'frozen', False):
+                icon_path = os.path.join(sys._MEIPASS, 'app_icon.png')
+            else:
+                icon_path = 'app_icon.png'
+            
+            # İkon oluştur veya yükle
+            if os.path.exists(icon_path):
+                image = Image.open(icon_path)
+                print(f"Sistem tepsisi icon yüklendi: {icon_path}")
+            else:
+                # Basit bir ikon oluştur
+                image = Image.new('RGB', (64, 64), color='#0078D4')
+                draw = ImageDraw.Draw(image)
+                # Ağ simgesi çiz
+                draw.rectangle([16, 20, 48, 25], fill='white')
+                draw.rectangle([16, 30, 48, 35], fill='white')
+                draw.rectangle([16, 40, 48, 45], fill='white')
+                print("Sistem tepsisi icon oluşturuldu")
             
             # Menü öğeleri
             menu = (
@@ -1498,7 +1531,7 @@ Sonuçlar veritabanına kaydedildi."""
             )
             
             # İkon oluştur
-            self.system_tray_icon = pystray.Icon("internet_traffic", image, "Internet Trafik İzleyici", menu)
+            self.system_tray_icon = pystray.Icon("InternetTrafikIzleyici", image, "Internet Trafik İzleyici", menu)
             
             # Thread'de çalıştır
             tray_thread = threading.Thread(target=self.system_tray_icon.run, daemon=True)
