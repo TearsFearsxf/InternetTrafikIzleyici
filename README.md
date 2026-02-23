@@ -142,3 +142,26 @@ Bu projeyi beğendiyseniz, lütfen ⭐ vererek destek olun!
 ---
 
 **Not**: Bu uygulama sadece izleme amaçlıdır. Ağ trafiğini engellemez veya değiştirmez.
+
+## Screenshots
+
+### Python - Ana Ekran
+![Python Ana Ekran](screenshots/python-ana-ekran.png)
+
+### Python - Cizgi Grafik
+![Python Cizgi Grafik](screenshots/python-cizgi-grafigi.png)
+
+### Python - Sutun Grafik
+![Python Sutun Grafik](screenshots/python-sutun-grafigi.png)
+
+### Python - Pasta Grafik
+![Python Pasta Grafik](screenshots/python-pasta-grafigi.png)
+
+### Python - Ayarlar
+![Python Ayarlar](screenshots/python-ayarlar.png)
+
+### Rust - Ana Ekran
+![Rust Ana Ekran](screenshots/rust-ana-ekran.png)
+
+### Rust - Ayarlar
+![Rust Ayarlar](screenshots/rust-ayarlar.png)
