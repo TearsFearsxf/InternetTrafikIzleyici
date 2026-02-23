@@ -1,167 +1,151 @@
-# 🌐 Internet Trafik İzleyici
+﻿# ğŸŒ Internet Trafik Ä°zleyici
 
-Modern ve kullanıcı dostu bir internet trafik izleme uygulaması. Gerçek zamanlı ağ kullanımınızı takip edin, analiz edin ve kontrol altında tutun.
+Modern ve kullanÄ±cÄ± dostu bir internet trafik izleme uygulamasÄ±. GerÃ§ek zamanlÄ± aÄŸ kullanÄ±mÄ±nÄ±zÄ± takip edin, analiz edin ve kontrol altÄ±nda tutun.
 
 ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 
-## ✨ Özellikler
+## âœ¨ Ã–zellikler
 
-### 📊 Temel Özellikler
-- **Gerçek Zamanlı İzleme**: Anlık download/upload hızı ve toplam veri kullanımı
-- **İki İzleme Modu**:
-  - Genel Takip: Tüm sistem trafiği
-  - Uygulama Bazlı: Belirli uygulamaların (Chrome, Discord, vb.) trafiği
-- **Akıllı Uygulama Seçici**: Çalışan uygulamaları otomatik listeler
-- **Kota Yönetimi**: Veri limiti belirleyin, uyarı alın
-- **Otomatik Kayıt**: Tüm oturumlar SQLite veritabanına kaydedilir
+### ğŸ“Š Temel Ã–zellikler
+- **GerÃ§ek ZamanlÄ± Ä°zleme**: AnlÄ±k download/upload hÄ±zÄ± ve toplam veri kullanÄ±mÄ±
+- **Ä°ki Ä°zleme Modu**:
+  - Genel Takip: TÃ¼m sistem trafiÄŸi
+  - Uygulama BazlÄ±: Belirli uygulamalarÄ±n (Chrome, Discord, vb.) trafiÄŸi
+- **AkÄ±llÄ± Uygulama SeÃ§ici**: Ã‡alÄ±ÅŸan uygulamalarÄ± otomatik listeler
+- **Kota YÃ¶netimi**: Veri limiti belirleyin, uyarÄ± alÄ±n
+- **Otomatik KayÄ±t**: TÃ¼m oturumlar SQLite veritabanÄ±na kaydedilir
 
-### 📈 Analiz ve Raporlama
-- **3 Farklı Grafik Türü**:
-  - Çizgi Grafik: Zaman serisi analizi
-  - Sütun Grafik: Günlük toplam kullanım
-  - Pasta Grafik: Download vs Upload dağılımı
-- **İstatistikler**: Toplam oturum, süre, veri kullanımı
-- **CSV Dışa Aktarma**: Excel uyumlu veri dışa aktarma
+### ğŸ“ˆ Analiz ve Raporlama
+- **3 FarklÄ± Grafik TÃ¼rÃ¼**:
+  - Ã‡izgi Grafik: Zaman serisi analizi
+  - SÃ¼tun Grafik: GÃ¼nlÃ¼k toplam kullanÄ±m
+  - Pasta Grafik: Download vs Upload daÄŸÄ±lÄ±mÄ±
+- **Ä°statistikler**: Toplam oturum, sÃ¼re, veri kullanÄ±mÄ±
+- **CSV DÄ±ÅŸa Aktarma**: Excel uyumlu veri dÄ±ÅŸa aktarma
 
-### 🚀 Gelişmiş Özellikler
-- **Hız Testi**: Gerçek internet hızınızı ölçün
-- **IP Analizi**: Public/Local IP ve aktif bağlantıları görüntüleyin
-- **Mini Widget**: Sürüklenebilir, şeffaf hız göstergesi
-- **Sistem Tepsisi**: Arka planda çalışma desteği
-- **Windows Başlangıç**: Otomatik başlatma seçeneği
-- **RAM/CPU Göstergesi**: Uygulamanın kaynak kullanımını izleyin
+### ğŸš€ GeliÅŸmiÅŸ Ã–zellikler
+- **HÄ±z Testi**: GerÃ§ek internet hÄ±zÄ±nÄ±zÄ± Ã¶lÃ§Ã¼n
+- **IP Analizi**: Public/Local IP ve aktif baÄŸlantÄ±larÄ± gÃ¶rÃ¼ntÃ¼leyin
+- **Mini Widget**: SÃ¼rÃ¼klenebilir, ÅŸeffaf hÄ±z gÃ¶stergesi
+- **Sistem Tepsisi**: Arka planda Ã§alÄ±ÅŸma desteÄŸi
+- **Windows BaÅŸlangÄ±Ã§**: Otomatik baÅŸlatma seÃ§eneÄŸi
+- **RAM/CPU GÃ¶stergesi**: UygulamanÄ±n kaynak kullanÄ±mÄ±nÄ± izleyin
 
-### ⚙️ Ayarlar
-- Windows ile başlat
-- Otomatik izleme başlat
-- Sistem tepsisine küçült
-- Güncelleme aralığı (1-10 saniye)
-- Veri klasörü yönetimi
+### âš™ï¸ Ayarlar
+- Windows ile baÅŸlat
+- Otomatik izleme baÅŸlat
+- Sistem tepsisine kÃ¼Ã§Ã¼lt
+- GÃ¼ncelleme aralÄ±ÄŸÄ± (1-10 saniye)
+- Veri klasÃ¶rÃ¼ yÃ¶netimi
 
 ## 🖼️ Ekran Görüntüleri
 
 ### Ana Ekran
-Modern dark mode arayüz ile tüm özellikler tek ekranda.
+![Python Ana Ekran](screenshots/python-ana-ekran.png)
 
 ### Grafikler
-Detaylı analiz için 3 farklı grafik türü.
+![Python Çizgi Grafik](screenshots/python-cizgi-grafigi.png)
+![Python Sütun Grafik](screenshots/python-sutun-grafigi.png)
+![Python Pasta Grafik](screenshots/python-pasta-grafigi.png)
 
 ### Ayarlar
-Uygulamayı ihtiyaçlarınıza göre özelleştirin.
+![Python Ayarlar](screenshots/python-ayarlar.png)
 
-## 📥 Kurulum
+### Rust (Opsiyonel)
+![Rust Ana Ekran](screenshots/rust-ana-ekran.png)
+![Rust Ayarlar](screenshots/rust-ayarlar.png)
 
-### Hazır EXE (Önerilen)
-1. [Releases](../../releases) sayfasından son sürümü indirin
-2. `InternetTrafikIzleyici.exe` dosyasını çalıştırın
-3. İlk çalıştırmada Windows Defender uyarı verebilir:
-   - "Daha fazla bilgi" → "Yine de çalıştır"
+## ğŸ“¥ Kurulum
 
-### Kaynak Koddan Çalıştırma
+### HazÄ±r EXE (Ã–nerilen)
+1. [Releases](../../releases) sayfasÄ±ndan son sÃ¼rÃ¼mÃ¼ indirin
+2. `InternetTrafikIzleyici.exe` dosyasÄ±nÄ± Ã§alÄ±ÅŸtÄ±rÄ±n
+3. Ä°lk Ã§alÄ±ÅŸtÄ±rmada Windows Defender uyarÄ± verebilir:
+   - "Daha fazla bilgi" â†’ "Yine de Ã§alÄ±ÅŸtÄ±r"
+
+### Kaynak Koddan Ã‡alÄ±ÅŸtÄ±rma
 ```bash
-# Gerekli kütüphaneleri yükleyin
+# Gerekli kÃ¼tÃ¼phaneleri yÃ¼kleyin
 pip install customtkinter psutil matplotlib pillow pystray win10toast requests
 
-# Uygulamayı çalıştırın
+# UygulamayÄ± Ã§alÄ±ÅŸtÄ±rÄ±n
 python internet_trafik_izleyici.py
 ```
 
-### Kendi EXE'nizi Oluşturun
+### Kendi EXE'nizi OluÅŸturun
 ```bash
-# PyInstaller'ı yükleyin
+# PyInstaller'Ä± yÃ¼kleyin
 pip install pyinstaller
 
-# EXE oluşturun
+# EXE oluÅŸturun
 python build_exe.py
 ```
 
-## 💾 Veri Depolama
+## ğŸ’¾ Veri Depolama
 
-Tüm veriler güvenli bir konumda saklanır:
+TÃ¼m veriler gÃ¼venli bir konumda saklanÄ±r:
 ```
-C:\Users\[KullanıcıAdı]\AppData\Roaming\InternetTrafikIzleyici\
-├── internet_traffic.db  (Veritabanı)
-└── settings.json        (Ayarlar)
+C:\Users\[KullanÄ±cÄ±AdÄ±]\AppData\Roaming\InternetTrafikIzleyici\
+â”œâ”€â”€ internet_traffic.db  (VeritabanÄ±)
+â””â”€â”€ settings.json        (Ayarlar)
 ```
 
-Bu sayede uygulamayı silseniz bile verileriniz güvende kalır.
+Bu sayede uygulamayÄ± silseniz bile verileriniz gÃ¼vende kalÄ±r.
 
-## 🛠️ Teknolojiler
+## ğŸ› ï¸ Teknolojiler
 
 - **Python 3.11**: Ana programlama dili
 - **CustomTkinter**: Modern GUI framework
-- **psutil**: Sistem ve ağ izleme
-- **matplotlib**: Grafik ve görselleştirme
-- **SQLite**: Veritabanı yönetimi
+- **psutil**: Sistem ve aÄŸ izleme
+- **matplotlib**: Grafik ve gÃ¶rselleÅŸtirme
+- **SQLite**: VeritabanÄ± yÃ¶netimi
 - **PyInstaller**: EXE paketleme
 
-## 📋 Sistem Gereksinimleri
+## ğŸ“‹ Sistem Gereksinimleri
 
-- **İşletim Sistemi**: Windows 10/11
+- **Ä°ÅŸletim Sistemi**: Windows 10/11
 - **RAM**: Minimum 100 MB
-- **Disk**: 100 MB boş alan
-- **Python**: 3.11+ (kaynak koddan çalıştırma için)
+- **Disk**: 100 MB boÅŸ alan
+- **Python**: 3.11+ (kaynak koddan Ã§alÄ±ÅŸtÄ±rma iÃ§in)
 
-## 🎯 Kullanım Senaryoları
+## ğŸ¯ KullanÄ±m SenaryolarÄ±
 
-- 📱 **Mobil Hotspot Kullanıcıları**: Veri kotanızı aşmayın
-- 🎮 **Oyuncular**: Hangi oyunun ne kadar veri harcadığını görün
-- 💼 **Uzaktan Çalışanlar**: İş uygulamalarınızın veri kullanımını takip edin
-- 🏠 **Ev Kullanıcıları**: Aylık internet kotanızı yönetin
-- 🔍 **Meraklılar**: Ağ trafiğinizi detaylı analiz edin
+- ğŸ“± **Mobil Hotspot KullanÄ±cÄ±larÄ±**: Veri kotanÄ±zÄ± aÅŸmayÄ±n
+- ğŸ® **Oyuncular**: Hangi oyunun ne kadar veri harcadÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼n
+- ğŸ’¼ **Uzaktan Ã‡alÄ±ÅŸanlar**: Ä°ÅŸ uygulamalarÄ±nÄ±zÄ±n veri kullanÄ±mÄ±nÄ± takip edin
+- ğŸ  **Ev KullanÄ±cÄ±larÄ±**: AylÄ±k internet kotanÄ±zÄ± yÃ¶netin
+- ğŸ” **MeraklÄ±lar**: AÄŸ trafiÄŸinizi detaylÄ± analiz edin
 
-## 🤝 Katkıda Bulunma
+## ğŸ¤ KatkÄ±da Bulunma
 
-Katkılarınızı bekliyoruz! Lütfen şu adımları izleyin:
+KatkÄ±larÄ±nÄ±zÄ± bekliyoruz! LÃ¼tfen ÅŸu adÄ±mlarÄ± izleyin:
 
-1. Fork yapın
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
+1. Fork yapÄ±n
+2. Feature branch oluÅŸturun (`git checkout -b feature/AmazingFeature`)
+3. DeÄŸiÅŸikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
 4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
+5. Pull Request aÃ§Ä±n
 
-## 📝 Lisans
+## ğŸ“ Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje MIT lisansÄ± altÄ±nda lisanslanmÄ±ÅŸtÄ±r. Detaylar iÃ§in [LICENSE](LICENSE) dosyasÄ±na bakÄ±n.
 
-## 🐛 Hata Bildirimi
+## ğŸ› Hata Bildirimi
 
-Bir hata mı buldunuz? [Issues](../../issues) sayfasından bildirebilirsiniz.
+Bir hata mÄ± buldunuz? [Issues](../../issues) sayfasÄ±ndan bildirebilirsiniz.
 
-## 📧 İletişim
+## ğŸ“§ Ä°letiÅŸim
 
-Sorularınız için issue açabilir veya pull request gönderebilirsiniz.
+SorularÄ±nÄ±z iÃ§in issue aÃ§abilir veya pull request gÃ¶nderebilirsiniz.
 
-## 🌟 Yıldız Verin!
+## ğŸŒŸ YÄ±ldÄ±z Verin!
 
-Bu projeyi beğendiyseniz, lütfen ⭐ vererek destek olun!
+Bu projeyi beÄŸendiyseniz, lÃ¼tfen â­ vererek destek olun!
 
 ---
 
-**Not**: Bu uygulama sadece izleme amaçlıdır. Ağ trafiğini engellemez veya değiştirmez.
+**Not**: Bu uygulama sadece izleme amaÃ§lÄ±dÄ±r. AÄŸ trafiÄŸini engellemez veya deÄŸiÅŸtirmez.
 
-## Screenshots
-
-### Python - Ana Ekran
-![Python Ana Ekran](screenshots/python-ana-ekran.png)
-
-### Python - Cizgi Grafik
-![Python Cizgi Grafik](screenshots/python-cizgi-grafigi.png)
-
-### Python - Sutun Grafik
-![Python Sutun Grafik](screenshots/python-sutun-grafigi.png)
-
-### Python - Pasta Grafik
-![Python Pasta Grafik](screenshots/python-pasta-grafigi.png)
-
-### Python - Ayarlar
-![Python Ayarlar](screenshots/python-ayarlar.png)
-
-### Rust - Ana Ekran
-![Rust Ana Ekran](screenshots/rust-ana-ekran.png)
-
-### Rust - Ayarlar
-![Rust Ayarlar](screenshots/rust-ayarlar.png)
