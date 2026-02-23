@@ -44,3 +44,7 @@ settings.json
 # Geçici dosyalar
 *.tmp
 *.bak
+
+# Rust
+rust_app/target/
+rust_app/rust_sessions_export.csv

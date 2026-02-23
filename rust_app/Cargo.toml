@@ -1,0 +1,30 @@
+[package]
+name = "rust_app"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[[bin]]
+name = "InternetTrafikIzleyiciRust"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["clock"] }
+csv = "1.4"
+eframe = "0.33"
+egui = "0.33"
+egui_plot = "0.34"
+local-ip-address = "0.6"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+rfd = "0.15"
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sysinfo = "0.30"
+tray-icon = "0.16"
+open = "5.3"
+winreg = "0.52"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
